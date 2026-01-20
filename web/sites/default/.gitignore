@@ -1,0 +1,34 @@
+# Ignore configuration files that may contain sensitive information.
+settings*.php
+services*.yml
+
+# Ignore drupal core.
+core
+
+# Ignore paths that contain user-generated content.
+files
+private
+
+# Ignore SimpleTest multi-site environment.
+simpletest
+
+# Ignore files for core secret keys
+# If you have added supplementary keys, add those here too.
+# *.key.yml
+
+# Ignore salt.txt files
+salt.txt
+
+# Ignore temporary files
+*.tmp
+*.swp
+*~
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
