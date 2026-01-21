@@ -1,0 +1,19 @@
+uuid: d7604ea1-8123-45b8-bbc1-1ba887010d0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_site_name
+    - node.type.research_site
+id: node.research_site.field_site_name
+field_name: field_site_name
+entity_type: node
+bundle: research_site
+label: 'Site Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

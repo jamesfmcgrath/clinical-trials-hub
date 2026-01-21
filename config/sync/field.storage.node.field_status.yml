@@ -1,0 +1,33 @@
+uuid: 0e91aa6a-2950-448f-b95e-bcfb58336344
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_status
+field_name: field_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: planning
+      label: Planning
+    -
+      value: recruiting
+      label: Recruiting
+    -
+      value: active
+      label: Active
+    -
+      value: completed
+      label: Completed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

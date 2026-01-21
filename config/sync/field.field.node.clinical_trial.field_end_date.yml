@@ -1,0 +1,21 @@
+uuid: 9d57f21d-8bdd-4956-b90c-53291716df11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.clinical_trial
+  module:
+    - datetime
+id: node.clinical_trial.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: clinical_trial
+label: 'End Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

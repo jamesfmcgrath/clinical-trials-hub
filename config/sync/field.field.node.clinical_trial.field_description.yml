@@ -1,0 +1,22 @@
+uuid: f1b48c21-e226-4f14-afea-6eee6c3bc01c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.clinical_trial
+  module:
+    - text
+id: node.clinical_trial.field_description
+field_name: field_description
+entity_type: node
+bundle: clinical_trial
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,64 @@
+uuid: 7019b5cf-0b2c-45cd-86f1-672b1e700396
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.clinical_trial.field_description
+    - field.field.node.clinical_trial.field_end_date
+    - field.field.node.clinical_trial.field_phase
+    - field.field.node.clinical_trial.field_start_date
+    - field.field.node.clinical_trial.field_status
+    - field.field.node.clinical_trial.field_trial_id
+    - node.type.clinical_trial
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.clinical_trial.default
+targetEntityType: node
+bundle: clinical_trial
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_end_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_phase:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_start_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_status:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_trial_id: true
+  links: true

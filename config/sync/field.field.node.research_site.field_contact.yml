@@ -1,0 +1,19 @@
+uuid: d58e970f-8d4b-4b7d-ae28-a2bb04b4a8df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.research_site
+id: node.research_site.field_contact
+field_name: field_contact
+entity_type: node
+bundle: research_site
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

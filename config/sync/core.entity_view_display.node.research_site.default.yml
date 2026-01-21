@@ -1,0 +1,54 @@
+uuid: 02e62c15-01dd-43ac-896f-4a5fb33d4e22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.research_site.field_associated_trials
+    - field.field.node.research_site.field_contact
+    - field.field.node.research_site.field_location
+    - field.field.node.research_site.field_site_name
+    - node.type.research_site
+  module:
+    - address
+    - user
+id: node.research_site.default
+targetEntityType: node
+bundle: research_site
+mode: default
+content:
+  field_associated_trials:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_contact:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_location:
+    type: address_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_site_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
