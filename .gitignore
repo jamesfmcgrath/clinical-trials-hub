@@ -115,3 +115,6 @@ docker-compose.override.yml
 # Ignore Yarn/NPM lock files (choose one)
 # yarn.lock
 # package-lock.json
+
+# Ignore API keys and sensitive key configurations
+config/sync/key.key.*.yml
